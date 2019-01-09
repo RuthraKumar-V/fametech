@@ -1,0 +1,46 @@
+Cuisines
+American
+Andhra
+Arabic
+Bengali
+Biryani
+Breakfast
+Burgers
+Cakes-Bakery
+Chinese
+Continental
+Desserts
+European
+Fast Food
+Healthy
+Hyderabadi
+Ice creams
+Italian
+Japanese
+Juices
+Kebab
+Lebanese
+Maharashtrian
+Mediterranean
+Mexican
+Middle Eastern
+Mughlai
+North Indian
+Pan-Asian
+Pizza
+Punjabi
+Rajasthani
+Regional
+Rolls
+Salads
+Sandwiches
+Saudi Arabian
+Seafood
+Shakes and Smoothies
+Snacks
+South Indian
+Tea - Coffee
+Thai
+Tibetan
+Vegetarian
+Wraps
