@@ -4,8 +4,28 @@
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+<script src="js/responsiveslides.min.js"></script>
+<script>
+$(function () {
+$("#slider3").responsiveSlides({
+auto: true,
+pager:true,
+nav:false,
+speed: 500,
+namespace: "callbacks",
+before: function () {
+$('.events').append("<li>before event fired.</li>");
+},
+after: function () {
+$('.events').append("<li>after event fired.</li>");
+}
+});
+});
+</script>
 
 </head>
 <body>
@@ -30,7 +50,6 @@
 <li><a class="hvr-underline-from-center active scroll" href="Home.html">Home</a></li>
 <li><a href="#Dishes" class="hvr-underline-from-center scroll">Dishes</a></li>
 <li><a href="#Restaurants" class="hvr-underline-from-center scroll">Restaurants</a></li>
-<li><a href="#Services" class="hvr-underline-from-center scroll scroll">Services</a></li>
 <li><a href="#contact" class="hvr-underline-from-center scroll scroll">Contact</a>
 </ul>
 </div>
@@ -107,7 +126,78 @@
 </div>
 </div>
 </div>
-
+<div class="w3l_banner_info">
+<div class="col-md-7 slider">
+<div class="callbacks_container">
+<ul class="rslides" id="slider3">
+<li>
+<div class="slider_banner_info">
+<h4>Delicious Foods</h4>
+<p>Ready to eat quality food</p>
+</div>
+</li>
+<li>
+<div class="slider_banner_info">
+<h4>Delivery unlimited</h4>
+<p>Discover a better way of foodie</p>
+</div>
+</li>
+<li>
+<div class="slider_banner_info">
+<h4>Delicious Foods</h4>
+<p>Ready to eat quality food</p>
+</div>
+</li>
+<li>
+<div class="slider_banner_info">
+<h4>Delivery unlimited</h4>
+<p>Discover a better way of foodie</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-md-5 banner-form-agileinfo">
+<form action="#" method="post">
+<input type="text" class="email" name="name" placeholder="Name" required=""/>
+<input type="email" class="password" name="email" placeholder="Email" required=""/>
+<select class="form-control option-w3ls">
+<option>Select Restaurant</option>
+<option>Haribhavanam</option>
+<option>Ammayi Veedu Pot Cook</option>
+<option>Hotel Junior Kuppanna</option>
+<option>Shahi Grill</option>
+<option>Hotel Atchaya</option>
+<option>Kattappas</option>
+<option>Tiffinys</option>
+<option>Namma Covai Kitchen</option>
+</select>
+<select class="form-control option-w3ls">
+<option>Select Food</option>
+<option>Unlimited meals with Curd(N/NV)</option>           
+<option>Tawa Fish Fry</option>
+<option>Special meals(Veg)</option>                        <option>Mandal Fish Fry</option>
+<option>Cup Rice</option>                                  <option>Prawns Fry</option>
+<option>Curd rice</option>                                 <option>Crab Masala</option>
+<option>Chicken Briyani</option>                           <option>Fish Manchurian</option>
+<option>Egg Briyani</option>                               <option>Pepper Fish</option>
+<option>Mutton Briyani</option>                            <option>Crispy Fish</option>
+</select>
+<input type="text" class="email" name="item" placeholder="No of Item" required=""/>
+<input type="text" class="email" name="Place" placeholder="Delivery Landmark" required=""/>
+<select class="form-control option-w3ls">
+<option>Type of Payment</option>
+<option>Credit Card</option>
+<option>Debit Card</option>
+<option>Cash on Delivery</option>
+</select>
+<input type="submit" class="hvr-shutter-in-vertical" value="Place Order">  	
+</form>
+</div>
+</div>
+<div class="clearfix"></div>
+</div>
+		
 </div>
 
 <div class="features" id="Dishes">
@@ -161,13 +251,6 @@ Mutton Briyani                            Crispy Fish
 <figcaption class="overlay">
 <h4>Kattappas</h4>
 <span>Saibaba Colony</span>
-<div class="w3l-social">
-<ul>
-<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-</ul>
-</div>
 </figcaption>
 </div>				
 </div>
@@ -178,11 +261,6 @@ Mutton Briyani                            Crispy Fish
 <h4>Hotel Junior Kuppanna</h4>
 <span>Peelamedu</span>
 <div class="w3l-social">
-<ul>
-<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-</ul>
 </div>
 </figcaption>
 </div>			
@@ -194,11 +272,6 @@ Mutton Briyani                            Crispy Fish
 <h4>Ammayi Veedu Pot Cook</h4>
 <span>Gandhipuram</span>
 <div class="w3l-social">
-<ul>
-<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-</ul>
 </div>
 </figcaption>
 </div>					
@@ -210,11 +283,6 @@ Mutton Briyani                            Crispy Fish
 <h4>Haribhavanam</h4>
 <span>Peelamedu</span>
 <div class="w3l-social">
-<ul>
-<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-</ul>
 </div>
 </figcaption>
 </div>
